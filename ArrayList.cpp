@@ -13,7 +13,6 @@ public:
     Array() {
         topIndex = -1;
     }
-
     void push(char ch) {
         if (topIndex >= MAX_SIZE - 1) {
             cout << "Stack Overflow!" << endl;
@@ -21,7 +20,6 @@ public:
         }
         stack[++topIndex] = ch;
     }
-
     void pop() {
         if (topIndex == -1) {
             cout << "Stack Underflow!" << endl;
@@ -29,7 +27,6 @@ public:
         }
         topIndex--;
     }
-
     char top() { 
         if (topIndex == -1) {
             cout << "Stack is empty" << endl;
